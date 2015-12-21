@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 
         }
 
-        mustacheCallback(path.resolve(file), path.basename(file),_opts);
+        mustacheCallback(path.resolve(file), file, _opts);
 
       } else {
 
