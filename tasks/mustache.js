@@ -108,7 +108,7 @@ module.exports = function(grunt) {
 
     // Loop through all *.mustache-files: using filename for key,
     // template contents as value
-    if(abspath.split('.').pop() === 'mustache'){
+    if(abspath.split('.').pop() === 'hbs'){
 
       templateCount++;
       templateContent += '"' + filename.split('.mustache')[0] + '"' + ' : \'' + grunt.file.read(abspath) + '\','+"\n";
